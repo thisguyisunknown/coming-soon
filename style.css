@@ -39,19 +39,8 @@ body {
   margin: 25px 0 0 0;
   position: relative;
 }
-#placeholder {
-  position: absolute;
-  left: 10px;
-  transform: translateY(-27px);
+::placeholder, ::-webkit-input-placeholder, ::-ms-input-placeholder, ::-moz-placeholder {
   color: #eee;
-  font-size: 1rem;
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-#email:focus + label, #email:not(:placeholder-shown) + label {
-  opacity: 0;
 }
 input {
   outline: none;
