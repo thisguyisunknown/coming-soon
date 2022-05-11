@@ -8,22 +8,18 @@ html, body {
 body {
   font-family: Sans-Serif;
   background-color: #000;
-}
-#container {
   color: #fff;
 }
 #logo > h1 {
   font-size: 3.125rem;
-  font-weight: bold;
   text-decoration: underline;
   text-decoration-color: #ffff00;
   text-align: center;
-  margin: 0 0 5px 0;
 }
 #logo > p {
   text-align: center;
   font-size: 1rem;
-  margin: 0 0 30px 0;
+  margin: 5px 0 30px 0;
 }
 #hero {
   position: absolute;
@@ -35,20 +31,20 @@ body {
 }
 #hero > h2{
   font-size: 2rem;
-  font-weight: bold;
 }
 #hero > p {
   font-size: 1rem;
 }
-form {
+#form {
   margin: 25px 0 0 0;
   position: relative;
 }
 #placeholder {
   position: absolute;
-  left: 15px;
-  transform: translateY(-30px);
+  left: 10px;
+  transform: translateY(-27px);
   color: #eee;
+  font-size: 1rem;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
@@ -57,25 +53,26 @@ form {
 #email:focus + label, #email:not(:placeholder-shown) + label {
   opacity: 0;
 }
+input {
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #fff;
+}
 input:not(#submit) {
   width: 100%;
-  box-sizing: border-box;
-  padding: 7px 9px;
   margin: 0;
-  background-color: transparent;
+  padding: 7px 9px;
   border: 0;
-  outline: 0;
   border-bottom: 2px solid #ffff00;
-  color: #fff;
   font-size: 1rem;
 }
 #submit {
-  outline: 0;
-  border: 2px solid #ffff00;
-  background-color: transparent;
-  padding: 8px 12px;
   margin: 12px 0 0 0;
-  color: #fff;
+  padding: 8px 12px;
+  border: 2px solid #ffff00;
   font-size: 1.3rem;
   font-weight: bold;
  -webkit-transition: all 0.1s ease-in-out;
@@ -87,6 +84,7 @@ input:not(#submit) {
   background-color: rgba(255,255,0,.5);
   border: 2px solid rgba(255,255,0,.5);
   color: #333;
+  cursor: pointer;
 }
 #submit:focus {
   background-color: #ffff00;
@@ -98,6 +96,7 @@ input:not(#submit) {
 }
 #notes p a {
   color: #fff;
+  cursor: pointer;
 }
 #bg {
   background-image: url(assets/pizza.jpg);
