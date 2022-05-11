@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="bg"></div>
+    <div id="container">
+      <div id="hero">
+        <div id="logo">
+          <h1>Pizza Fresca</h1>
+          <p><i>Serving you the Best & Fresh Pizzas ever</i></p>
+        </div>
+        <h2>We're Opening Soon</h2>
+        <p>
+          Give us your email to get an update when we open. <br> <i>You'll also get a <b>15% OFF</b> on our large pizzas.</i>
+        </p>
+        <form id="Form" action="" method="get" onsubmit="return validateForm()" accept-charset="utf-8">
+          <input type="email" name="email" id="email" placeholder=" " required/>
+          <label id="placeholder" for="email">Your Email...</label>
+          <input type="submit" name="submit" id="submit" value="Update Me"/>
+          <div id="notes">
+            <p><i>
+              By submitting, You agree to the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>. <br>
+              Any questions? Contact us at <b>baker@example.co</b>
+            </i></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
