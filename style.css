@@ -40,7 +40,7 @@ body {
   position: relative;
 }
 ::placeholder, ::-webkit-input-placeholder, ::-ms-input-placeholder, ::-moz-placeholder {
-  color: #eee;
+  color: #cecec9;
 }
 input {
   outline: none;
