@@ -14,10 +14,8 @@ body {
   font-size: 3.125rem;
   text-decoration: underline;
   text-decoration-color: #ffff00;
-  text-align: center;
 }
 #logo > p {
-  text-align: center;
   font-size: 1rem;
   margin: 5px 0 30px 0;
 }
@@ -34,12 +32,21 @@ body {
 }
 #hero > p {
   font-size: 1rem;
+  margin: 5px 0 30px 0;
 }
 #form {
-  margin: 25px 0 0 0;
   position: relative;
 }
-::placeholder, ::-webkit-input-placeholder, ::-ms-input-placeholder, ::-moz-placeholder {
+::placeholder {
+  color: #cecec9;
+}
+::-webkit-input-placeholder {
+  color: #cecec9;
+}
+::-ms-input-placeholder {
+  color: #cecec9;
+}
+::-moz-placeholder {
   color: #cecec9;
 }
 input {
@@ -47,12 +54,12 @@ input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: transparent;
   color: #fff;
 }
 input:not(#submit) {
   width: 100%;
   margin: 0;
+  background-color: rgba(0,0,0,.5);
   padding: 7px 9px;
   border: 0;
   border-bottom: 2px solid #ffff00;
@@ -61,6 +68,7 @@ input:not(#submit) {
 #submit {
   margin: 12px 0 0 0;
   padding: 8px 12px;
+  background-color: transparent;
   border: 2px solid #ffff00;
   font-size: 1.3rem;
   font-weight: bold;
